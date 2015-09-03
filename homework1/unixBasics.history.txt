@@ -1,0 +1,194 @@
+    1  logout
+    2  clear
+    3  ls
+    4  mkdir wskc
+    5  ls
+    6  cd wskc
+    7  ls
+    8  cd ..
+    9  cd wskc
+   10  wget http://www.cals.arizona.edu/~anling/workshop/tset.fna
+   11  ls
+   12  cp tset.fna ../
+   13  cd ..
+   14  ls
+   15  mv tset.fna tset.fa
+   16  ls
+   17  mv tset.fna ./wskc/
+   18  mv tset.fa ./wskc/
+   19  cd wskc
+   20  ls
+   21  rm tset.fa
+   22  ls
+   23  head tset.fna
+   24  tail -3 tset.fna
+   25  pwd
+   26  head -3 < test.fna > t.f
+   27  ls
+   28  head -3 < tset.fna > t.f
+   29  ls
+   30  cat t.f
+   31  man ls
+   32  grep -c ">" tset.fna
+   33  sed 's/>/@/g' tset.fna
+   34  vi tset.fna
+   35  module avail
+   36  module load blast
+   37  blastn
+   38  blastn -db/genome/Bacteria/NCBI_genomes)Bacteria -query tset.fna -out tset.txt
+   39  blastn -db /genome/Bacteria/NCBI_genomes)Bacteria -query tset.fna -out tset.txt
+   40  blastn -db /genome/Bacteria/NCBI_genomes_Bacteria -query tset.fna -out tset.txt
+   41  ls
+   42  vi tset.txt
+   43  blastn -db /genome/Bacteria/NCBI_genomes_Bacteria -query tset.fna -out tset.txt -outfmt 7
+   44  vi tset.txt
+   45  wget http://www.cals.arizona.edu/~anling/workshop/template.csh
+   46  ls
+   47  vi template.csh
+   48  wget http://www.cals.arizona.edu/~anling/workshop/testset.fna
+   49  ls
+   50  mv template.csh wskc.csh
+   51  ls
+   52  qsub wskc.csh
+   53  qstat -u kmcarter91
+   54  ls
+   55  vi tstset.txt
+   56  ls -l
+   57  vi testset.txt
+   58  grep -c "0 hits found" testset.txt
+   59  grep -c " 0 hits found" testset.txt
+   60  ls
+   61  rm *.e*
+   62  ls
+   63  rm *.o*
+   64  ls
+   65  vi testset.txt
+   66  module load R
+   67  R
+   68  wget http://cals.arizona.edu/~anling/software/taec_linux.zip
+   69  unzip taec_linux.zip
+   70  module load R
+   71  source ("taec.R")
+   72  ls
+   73  cd teac_rev
+   74  cd taec_rev
+   75  source(taec.R)
+   76  ls
+   77  R
+   78  clear
+   79  wget http://cals.arizona.edu/~anling/software/RAIDA_1.0.tar.gz
+   80  R
+   81  ls
+   82  mv RA* ../
+   83  cd ..
+   84  ls
+   85  R
+   86  clear
+   87  logout
+   88  ls -l
+   89  ls -lt
+   90  ls
+   91  ls --help
+   92  man ls
+   93  pwd
+   94  ls /
+   95  cd /rsgrps/bhurwitz/bhurwitzlab/abe487
+   96  cd
+   97  mkdir metalab
+   98  cd ./mkdir
+   99  ls
+  100  cd metalab
+  101  mkdir foo
+  102  cd foo
+  103  rmdir foo
+  104  cd ..
+  105  rmdir foo
+  106  w
+  107  man wc
+  108  w | wc -l
+  109  mkdir abe587
+  110  cd abe587
+  111  man sort
+  112  man uniq
+  113  w | head -5
+  114  w | head -5 > uhead
+  115  ls
+  116  man cat
+  117  cat head
+  118  cat uhead
+  119  w | tail > utail
+  120  cat head tail > uall
+  121  cat uhead utail > uall
+  122  cp /tmp/cuffdiff.txt
+  123  tp ftp.imicrobe.us
+  124  ftp.imicrobe.us
+  125  ftp ftp.imicrobe.us
+  126  ssh-keygen
+  127  cd~/.ssh
+  128  cd ~/.ssh
+  129  cat id_rsa.pub
+  130  ls
+  131  vi config
+  132  cad id_rsa.pub
+  133  cat id_rsa.pub
+  134  cat id_rsa.pub > config
+  135  ls
+  136  vi config
+  137  ls ~./ssh
+  138  cd ./ssh
+  139  cd ~./ssh
+  140  cd ~/.ssh
+  141  vi config
+  142  git clone git@github.com:kmcarter91/ABE587.git
+  143  cd ~/ABE587
+  144  ls
+  145  cd ABE587
+  146  mkdir homework1
+  147  cd homework1
+  148  ftp ftp.imicrobe.us
+  149  ls
+  150  cd ~/.ssh
+  151  ls
+  152  cd ABE587
+  153  cd homework1
+  154  nano sequences.fasta
+  155  ls
+  156  wc | sequences.fasta
+  157  wc sequences.fasta
+  158  wc man
+  159  man wc
+  160  wc -m sequences.fasta
+  161  man head
+  162  head --lines=1 sequences.fasta
+  163  tail --lines=3 sequences.fasta
+  164  man grep
+  165  grep sequences.fasta
+  166  grep ATG sequences.fasta
+  167  man mv
+  168  mv sequences.fasta gensequence.fasta
+  169  ls
+  170  mv gensequence.fasta genmouse.fasta
+  171  mkdir fasta
+  172  cd fasta
+  173  cd ..
+  174  man cp
+  175  cp genmouse.fasta ~/fasta
+  176  ls
+  177  cd fasta
+  178  ls
+  179  cd ..
+  180  cd ~/fasta
+  181  cd ./fasta
+  182  cd ..
+  183  cp genmouse.fasta ./fasta
+  184  cd fasta
+  185  ls
+  186  cd ..
+  187  man rm
+  188  rm genmouse.fasta
+  189  ls
+  190  history -s|-l|-m unixBasics.history.txt
+  191  unixBasics.history.txt
+  192  ls
+  193  man history
+  194  history > ./unixBasics.history.txt
