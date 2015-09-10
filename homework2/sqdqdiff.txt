@@ -1,0 +1,4 @@
+The difference between single quotes and double quotes is
+that double quotes will perform escape codes such as \n
+and \t where as in single quotes they will be printed as
+text.
