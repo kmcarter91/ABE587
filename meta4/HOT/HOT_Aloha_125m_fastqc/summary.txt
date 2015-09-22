@@ -1,0 +1,11 @@
+PASS	Basic Statistics	HOT_Aloha_125m.fastq
+FAIL	Per base sequence quality	HOT_Aloha_125m.fastq
+WARN	Per sequence quality scores	HOT_Aloha_125m.fastq
+FAIL	Per base sequence content	HOT_Aloha_125m.fastq
+FAIL	Per sequence GC content	HOT_Aloha_125m.fastq
+WARN	Per base N content	HOT_Aloha_125m.fastq
+WARN	Sequence Length Distribution	HOT_Aloha_125m.fastq
+PASS	Sequence Duplication Levels	HOT_Aloha_125m.fastq
+PASS	Overrepresented sequences	HOT_Aloha_125m.fastq
+PASS	Adapter Content	HOT_Aloha_125m.fastq
+WARN	Kmer Content	HOT_Aloha_125m.fastq

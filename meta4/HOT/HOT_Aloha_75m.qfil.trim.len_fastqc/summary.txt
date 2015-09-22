@@ -1,0 +1,11 @@
+PASS	Basic Statistics	HOT_Aloha_75m.qfil.trim.len.fastq
+PASS	Per base sequence quality	HOT_Aloha_75m.qfil.trim.len.fastq
+WARN	Per sequence quality scores	HOT_Aloha_75m.qfil.trim.len.fastq
+WARN	Per base sequence content	HOT_Aloha_75m.qfil.trim.len.fastq
+FAIL	Per sequence GC content	HOT_Aloha_75m.qfil.trim.len.fastq
+PASS	Per base N content	HOT_Aloha_75m.qfil.trim.len.fastq
+WARN	Sequence Length Distribution	HOT_Aloha_75m.qfil.trim.len.fastq
+PASS	Sequence Duplication Levels	HOT_Aloha_75m.qfil.trim.len.fastq
+PASS	Overrepresented sequences	HOT_Aloha_75m.qfil.trim.len.fastq
+PASS	Adapter Content	HOT_Aloha_75m.qfil.trim.len.fastq
+WARN	Kmer Content	HOT_Aloha_75m.qfil.trim.len.fastq
