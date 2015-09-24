@@ -1,0 +1,3 @@
+The total number of lines is: 120 
+The total number of characters is: 7920 
+The average nubmer of characters per line is:66
