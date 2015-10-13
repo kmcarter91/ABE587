@@ -1,0 +1,99 @@
+ok 1 - 01-mod.pl
+not ok 2 - 01-mod.pl 1 2 3 4 5 6 7
+#   Failed test '01-mod.pl 1 2 3 4 5 6 7'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (2, 4, 6), expect (evens = 2, 4, 6)
+not ok 3 - 01-mod.pl 1 3 5 7
+#   Failed test '01-mod.pl 1 3 5 7'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (), expect (evens = )
+ok 4 - 02-mod-sort-sum.pl
+ok 5 - 02-mod-sort-sum.pl 1 2 3 4 5 6 7
+ok 6 - 03-sort.pl
+not ok 7 - 03-sort.pl 98 2 36 74 27 33
+#   Failed test '03-sort.pl 98 2 36 74 27 33'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 2: got (default sort = 2, 27, 33, 36, 74, 98), expect (numerical sort = 2, 27, 33, 36, 74, 98)
+not ok 8 - 04-array-ops.pl
+#   Failed test '04-array-ops.pl'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '5'
+#     expected: '0'
+# Different in line: 1: got (array = 101, 2, 15, 22, 95, 33, 2, 27, 15, 52), expect (array = 101, 2, 15, 22, 95, 33, 2, 27, 72, 15, 52)
+# 
+# 2: got (popped = 52, array = 101, 2, 15, 22, 95, 33, 2, 27, 15), expect (popped = 52, array = 101, 2, 15, 22, 95, 33, 2, 27, 72, 15)
+# 
+# 3: got (shifted = 101, array = 2, 15, 22, 95, 33, 2, 27, 15), expect (shifted = 101, array = 2, 15, 22, 95, 33, 2, 27, 72, 15)
+# 
+# 4: got (after push, array = 2, 15, 22, 95, 33, 2, 27, 15, 12), expect (after push, array = 2, 15, 22, 95, 33, 2, 27, 72, 15, 12)
+# 
+# 5: got (after unshift, array = 4, 2, 15, 22, 95, 33, 2, 27, 15, 12), expect (after unshift, array = 4, 2, 15, 22, 95, 33, 2, 27, 72, 15, 12)
+ok 9 - 05-string-sort.pl
+not ok 10 - 05-string-sort.pl ATGCCCGGCCCGGC GCGTGCTAGCAATACGATAAACCGG ATATATATCGAT ATGGGCCC
+#   Failed test '05-string-sort.pl ATGCCCGGCCCGGC GCGTGCTAGCAATACGATAAACCGG ATATATATCGAT ATGGGCCC'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '6'
+#     expected: '0'
+# Different in line: 1: got (sorted = ATGCCCGGCCCGGC, GCGTGCTAGCAATACGATAAACCGG, ATATATATCGAT, ATGGGCCC), expect (sorted = ATATATATCGAT, ATGCCCGGCCCGGC, ATGGGCCC, GCGTGCTAGCAATACGATAAACCGG)
+# 
+# 2: got (reverse = ATGCCCGGCCCGGC, GCGTGCTAGCAATACGATAAACCGG, ATATATATCGAT, ATGGGCCC), expect (reverse = GCGTGCTAGCAATACGATAAACCGG, ATGGGCCC, ATGCCCGGCCCGGC, ATATATATCGAT)
+# 
+# 1: got Argument "ATGCCCGGCCCGGC" isn't numeric in sort at /Users/kyclark/work/students/kmcarter91/week6/05-string-sort.pl line 10.
+# 2: got Argument "GCGTGCTAGCAATACGATAAACCGG" isn't numeric in sort at /Users/kyclark/work/students/kmcarter91/week6/05-string-sort.pl line 10.
+# 3: got Argument "ATATATATCGAT" isn't numeric in sort at /Users/kyclark/work/students/kmcarter91/week6/05-string-sort.pl line 10.
+# 4: got Argument "ATGGGCCC" isn't numeric in sort at /Users/kyclark/work/students/kmcarter91/week6/05-string-sort.pl line 10.
+ok 11 - 06-string-sort-len.pl
+ok 12 - 06-string-sort-len.pl AACT TACCTAG TTACAG
+ok 13 - 07-gc.pl
+not ok 14 - 07-gc.pl ATGGGCCC atgcccggcccggc
+#   Failed test '07-gc.pl ATGGGCCC atgcccggcccggc'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '8'
+#     expected: '0'
+# Different in line: 2: got (Seq: ATGGGCCC ), expect (Seq   : ATGGGCCC)
+# 
+# 3: got (Length: 8 ), expect (Length: 8)
+# 
+# 4: got (#GC: 6 ), expect (#GC   : 6)
+# 
+# 5: got (%GC: 75.00%), expect (%GC   : 75)
+# 
+# 7: got (Seq: atgcccggcccggc ), expect (Seq   : atgcccggcccggc)
+# 
+# 8: got (Length: 14 ), expect (Length: 14)
+# 
+# 9: got (#GC: 12 ), expect (#GC   : 12)
+# 
+# 10: got (%GC: 85.71%), expect (%GC   : 85.7142857142857)
+ok 15 - 08-snps.pl
+ok 16 - 08-snps.pl AACT ATCGA
+not ok 17 - 08-snps.pl AACT AACT
+#   Failed test '08-snps.pl AACT AACT'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (Found 0 SNPs), expect (Found 0 SNPs.)
+not ok 18 - 08-snps.pl AACT AACG
+#   Failed test '08-snps.pl AACT AACG'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 2: got (Found 1 SNP), expect (Found 1 SNP.)
+not ok 19 - 08-snps.pl AACT AATC
+#   Failed test '08-snps.pl AACT AATC'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 3: got (Found 2 SNPs), expect (Found 2 SNPs.)
+Skipping 09-extra-credit.pl (does not exist)
+Skipping 09-extra-credit.pl (does not exist)
+1..19
+The plan was already output at /usr/local/lib/perl5/5.22.0/Test/Builder.pm line 2510.
+1..19
+# Looks like you failed 9 tests of 19.

@@ -12,7 +12,9 @@ my @nst = sort {$a <=> $b} @args;
 my @rns = sort {$b <=> $a} @args;
 
 print "default sort = ",join(', ',@def),"\n";
-print "default sort = ",join(', ',@nst),"\n";
+print "numerical sort = ",join(', ',@nst),"\n";
 print "reverse numerical sort = ",join(', ',@rns),"\n";
 
+__END__
 
+Not the expected output.
