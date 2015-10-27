@@ -1,0 +1,88 @@
+Endocrine and metabolic diseases:
+0.25% Core,  0.75% Variable
+Nervous system:
+0.236842105263158% Core,  0.763157894736842% Variable
+Cell growth and death:
+0.275% Core,  0.725% Variable
+Metabolism of terpenoids and polyketides:
+0.378378378378378% Core,  0.621621621621622% Variable
+Infectious diseases: Bacterial:
+0.465753424657534% Core,  0.534246575342466% Variable
+Signaling molecules and interaction:
+0.222222222222222% Core,  0.777777777777778% Variable
+Cardiovascular diseases:
+0% Core,  100% Variable
+Chemical structure transformation maps:
+0% Core,  100% Variable
+Energy metabolism:
+0.616402116402116% Core,  0.383597883597884% Variable
+Folding, sorting and degradation:
+0.508333333333333% Core,  0.491666666666667% Variable
+Membrane transport:
+0.571428571428571% Core,  0.428571428571429% Variable
+Immune diseases:
+0.363636363636364% Core,  0.636363636363636% Variable
+Replication and repair:
+0.54% Core,  0.46% Variable
+Nucleotide metabolism:
+0.674311926605505% Core,  0.325688073394495% Variable
+Excretory system:
+0.444444444444444% Core,  0.555555555555556% Variable
+Sensory system:
+0.125% Core,  0.875% Variable
+Cancers: Specific types:
+0.181818181818182% Core,  0.818181818181818% Variable
+Infectious diseases: Parasitic:
+0.227272727272727% Core,  0.772727272727273% Variable
+Circulatory system:
+0.222222222222222% Core,  0.777777777777778% Variable
+Immune system:
+0.173913043478261% Core,  0.826086956521739% Variable
+Cancers: Overview:
+0.316455696202532% Core,  0.683544303797468% Variable
+Translation:
+0.577380952380952% Core,  0.422619047619048% Variable
+Carbohydrate metabolism:
+0.652014652014652% Core,  0.347985347985348% Variable
+Global and overview maps:
+0.621399176954732% Core,  0.378600823045267% Variable
+Transport and catabolism:
+0.285714285714286% Core,  0.714285714285714% Variable
+Glycan biosynthesis and metabolism:
+0.641509433962264% Core,  0.358490566037736% Variable
+Drug resistance:
+0.69811320754717% Core,  0.30188679245283% Variable
+Lipid metabolism:
+0.538071065989848% Core,  0.461928934010152% Variable
+Endocrine system:
+0.357894736842105% Core,  0.642105263157895% Variable
+Xenobiotics biodegradation and metabolism:
+0.413265306122449% Core,  0.586734693877551% Variable
+Cell motility:
+0.462686567164179% Core,  0.537313432835821% Variable
+Infectious diseases: Viral:
+0.164179104477612% Core,  0.835820895522388% Variable
+Environmental adaptation:
+0.5% Core,  0.5% Variable
+Metabolism of cofactors and vitamins:
+0.670411985018727% Core,  0.329588014981273% Variable
+Amino acid metabolism:
+0.606761565836299% Core,  0.393238434163701% Variable
+Transcription:
+0.326086956521739% Core,  0.673913043478261% Variable
+Digestive system:
+0.275862068965517% Core,  0.724137931034483% Variable
+Neurodegenerative diseases:
+0.241935483870968% Core,  0.758064516129032% Variable
+Signal transduction:
+0.447368421052632% Core,  0.552631578947368% Variable
+Development:
+0% Core,  100% Variable
+Cellular community:
+0.15% Core,  0.85% Variable
+Metabolism of other amino acids:
+0.606837606837607% Core,  0.393162393162393% Variable
+Biosynthesis of other secondary metabolites:
+0.576923076923077% Core,  0.423076923076923% Variable
+Substance dependence:
+0% Core,  100% Variable
