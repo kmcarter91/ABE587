@@ -6,8 +6,7 @@ use autodie;
 use feature 'say';
 use Getopt::Long;
 use Pod::Usage;
-use Bio::DB::Fasta;
-use Bio::SeqIO;
+use Bio::SearchIO;
 
 my %opts = get_opts();
 my @args = @ARGV;
@@ -19,32 +18,26 @@ if ($opts{'help'} || $opts{'man'}) {
     });
 }
 
-my $infile  =shift @args or pod2usage("No file given.");
-my $pattern =shift @args or pod2usage("No pattern given.");
-my $outfile = $pattern;
-$outfile =~ s/[^A-Z0-9]//i;
-$outfile = "$outfile.fa";
-
-my $outseq = Bio::SeqIO->new( -file   => ">$outfile",
-                           -format => 'fasta',
-                         );
+my $infile=shift @args;
+my $indata=new Bio::SearchIO(-format => 'blast',
+                             -file   => $infile,
+                            );
+say("query\thit\tevalue");
 
 
-say qq(Searching '$infile' for '$pattern');
-
-my $fastafh = Bio::DB::Fasta->new($infile) or pod2usage("File doesn't exist.");
-my @ids = $fastafh->get_all_primary_ids;
-my $count;
-for my $id (@ids){
-    if($id =~ /$pattern/){
-        $count++;
-        my $seq = $fastafh->get_Seq_by_id($id);
-        $outseq->write_seq($seq);  
+while( my $current = $indata->next_result){
+    while( my $hit = $current->next_hit){
+        while( my $hsp = $hit->next_hsp){
+            if($hsp->evalue <= 1e-50){
+                print($hsp->query_string,"\t");
+                print($hsp->hit_string,"\t");
+                say($hsp->evalue);
+            }
+        }
     }
 }
 
-say "Found $count ids";
-say "See results in '$outfile'";
+#say "OK";
 
 # --------------------------------------------------
 sub get_opts {
@@ -66,11 +59,11 @@ __END__
 
 =head1 NAME
 
-02-fasta-search.pl - a script
+01-bio-searchio.pl
 
 =head1 SYNOPSIS
 
-  02-fasta-search.pl file.fa pattern 
+  01-bio-searchio.pl query_v_sprot.blastout
 
 Options:
 
@@ -79,8 +72,8 @@ Options:
 
 =head1 DESCRIPTION
 
-Returns a fasta file containing all sequences with the given pattern
-in their sequence ID
+Parses Blast output using "Bio::SearchIO" and retrieves HSP for hits with significance less than or equal to 1x10^-50.
+
 
 =head1 SEE ALSO
 
