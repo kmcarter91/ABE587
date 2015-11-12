@@ -1,0 +1,70 @@
+1..25
+not ok 1 - /Users/kyclark/work/students/kmcarter91/week10/01-fasta-splitter.pl
+#   Failed test '/Users/kyclark/work/students/kmcarter91/week10/01-fasta-splitter.pl'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Exception.pm line 367.
+#          got: 0
+#     expected: anything else
+ok 2 - /Users/kyclark/work/students/kmcarter91/week10/01-fasta-splitter.pl -n 10 -o /var/folders/hr/9s3kbq2x46nfp6kbdn99s63r0000gp/T/szdHwQReCu/split /Users/kyclark/work/abe487/lab/tester/data/week10/test.fa /Users/kyclark/work/abe487/lab/tester/data/week10/test2.fa
+ok 3 - /var/folders/hr/9s3kbq2x46nfp6kbdn99s63r0000gp/T/szdHwQReCu/split was created
+ok 4 - test.fa.1 exists
+ok 5 - test.fa.1 size = 2384
+ok 6 - nseqs = 10
+ok 7 - test.fa.2 exists
+ok 8 - test.fa.2 size = 2085
+ok 9 - nseqs = 10
+ok 10 - test.fa.3 exists
+not ok 11 - test.fa.3 size = 813
+#   Failed test 'test.fa.3 size = 813'
+#   at ./test-week10.pl line 76.
+#          got: '2594'
+#     expected: '813'
+not ok 12 - nseqs = 4
+#   Failed test 'nseqs = 4'
+#   at ./test-week10.pl line 81.
+#          got: '4'
+#     expected: '10'
+not ok 13 - test2.fa.1 exists
+#   Failed test 'test2.fa.1 exists'
+#   at ./test-week10.pl line 73.
+not ok 14 - test2.fa.1 size = 2992
+#   Failed test 'test2.fa.1 size = 2992'
+#   at ./test-week10.pl line 76.
+#          got: undef
+#     expected: '2992'
+not ok 15 - test2.fa.2 exists
+#   Failed test 'test2.fa.2 exists'
+#   at ./test-week10.pl line 73.
+not ok 16 - test2.fa.2 size = 41
+#   Failed test 'test2.fa.2 size = 41'
+#   at ./test-week10.pl line 76.
+#          got: undef
+#     expected: '41'
+ok 17 - /Users/kyclark/work/students/kmcarter91/week10/02-fasta-search.pl
+ok 18 - /Users/kyclark/work/students/kmcarter91/week10/02-fasta-search.pl /Users/kyclark/work/abe487/lab/tester/data/week10/uniprot.fa Z_
+not ok 19 - outfile (Z_.fa) exists)
+#   Failed test 'outfile (Z_.fa) exists)'
+#   at ./test-week10.pl line 100.
+not ok 20 - outfile is correct size
+#   Failed test 'outfile is correct size'
+#   at ./test-week10.pl line 103.
+#          got: undef
+#     expected: '4761'
+not ok 21 - /Users/kyclark/work/students/kmcarter91/week10/03-find-cds.pl
+#   Failed test '/Users/kyclark/work/students/kmcarter91/week10/03-find-cds.pl'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Exception.pm line 367.
+#          got: 0
+#     expected: anything else
+not ok 22 - /Users/kyclark/work/students/kmcarter91/week10/03-find-cds.pl /Users/kyclark/work/abe487/lab/tester/data/week10/ncbi-sample-rec.gb /Users/kyclark/work/abe487/lab/tester/data/week10/sequence.gb
+#   Failed test '/Users/kyclark/work/students/kmcarter91/week10/03-find-cds.pl /Users/kyclark/work/abe487/lab/tester/data/week10/ncbi-sample-rec.gb /Users/kyclark/work/abe487/lab/tester/data/week10/sequence.gb'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '6'
+#     expected: '0'
+# Different in line: 1: got (OK), expect (U49845 has 3 CDS)
+# 
+# got nothing, expected: 1: SSIYNGISTSGLDLNNGTIADMRQLGIVESYKLKRAVVSSASEAAEVLLRVDNIIRARPRTANRQHM
+# got nothing, expected: 2: MTQLQISLLLTATISLLHLVVATPYEAYPIGKQYPPVARVNESFTFQISNDTYKSSVDKTAQITYNCFDLPSWLSFDSSSRTFSGEPSSDLLSDANTTLYFNVILEGTDSADSTSLNNTYQFVVTNRPSISLSSDFNLLALLKNYGYTNGKNALKLDPNEVFNVTFDRSMFTNEESIVSYYGRSQLYNAPLPNWLFFDSGELKFTGTAPVINSAIAPETSYSFVIIATDIEGFSAVEVEFELVIGAHQLTTSIQNSLIINVTDTGNVSYDLPLNYVYLDDDPISSDKLGSINLLDAPDWVALDNATISGSVPDELLGKNSNPANFSVSIYDTYGDVIYFNFEVVSTTDLFAISSLPNINATRGEWFSYYFLPSQFTDYVNTNVSLEFTNSSQDHDWVKFQSSNLTLAGEVPKNFDKLSLGLKANQGSQSQELYFNIIGMDSKITHSNHSANATSTRSSHHSTSTSSYTSSTYTAKISSTSAAATSSAPAALPAANKTSSHNKKAVAIACGVAIPLGVILVALICFLIFWRRRRENPDDENLPHAISGPDLNNPANKPNQENATPLNNPFDDDASSYDDTSIARRLAALNTLKLDNHSATESDISSVDEKRDSLSGMNTYNDQFQSQSKEELLAKPPVQPPESPFFDPQNRSSSVYMDSEPAVNKSWRYTGNLSPVSDIVRDSYGSQKTVDTEKLFDLEAPEKEKRTSRDVTMSSLDPWNSNISPSPVRKSVTPSPYNVTKHRNRHLQNIQDSQSGKNGITPTTMSTSSSDDFVPVKDGENFCWVHSMEPDRRPSKKRLVDFSNKSNVNVGQVKDIHGRIPEML
+# got nothing, expected: 3: MNRWVEKWLRVYLKCYINLILFYRNVYPPQSFDYTTYQSFNLPQFVPINRHPALIDYIEELILDVLSKLTHVYRFSICIINKKNDLCIEKYVLDFSELQHVDKDDQIITETEVFDEFRSSLNSLIMHLEKLPKVNDDTITFEAVINAIELELGHKLDRNRRVDSLEEKAEIERDSNWVKCQEDENLPDNNGFQPPKIKLTSLVGSDVGPLIIHQFSEKLISGDDKILNGVYSQYEEGESIFGSLF
+# got nothing, expected: NM_001298872 has 1 CDS
+# got nothing, expected: 1: MDNFGLGGSDLSKGQIFQVLVRLSVASLITYYSVKWMMNQMDPTSKNKKKAKVLAEEQLKRLAEQEGFKLRGQEFSDYELMIASHLVVPADITVSWADIAGLDSVIQELRESVVLPIQHKDLFKHSKLWQAPKGVLLHGPPGCGKTLIAKATAKEAGMRFINLDVAILTDKWYGESQKLTSAVFSLASRIEPCIIFIDEIDSFLRSRNMNDHEATAMMKTQFMMLWDGLSTNANSTVIVMGATNRPQDLDKAIVRRMPAQFHIGLPSETQRKDILKLILQSEEVSQDVDLNRLSKLTNGFSGSDLREMCRNASVYRMRQLITSRDPSATALDRNNVRITMDDLLGSHLKIKESKMHTSSLFLENRIELD
+# Looks like you planned 25 tests but ran 22.
+# Looks like you failed 11 tests of 22 run.
