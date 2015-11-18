@@ -1,0 +1,6 @@
+std-err/**
+std-out
+blast-results/**
+data/**
+blastdb/**
+
