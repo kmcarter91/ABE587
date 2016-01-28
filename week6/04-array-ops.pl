@@ -19,4 +19,6 @@ print "after push, array = ",join(', ',@lst),"\n";
 unshift(@lst,4);
 print "after unshift, array = ",join(', ',@lst),"\n";
 
+__END__
 
+You copied the array wrong, so it fails all the tests.  Points off next time!
